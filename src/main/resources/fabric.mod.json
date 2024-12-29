@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tradelesshall",
+  "version": "${version}",
+  "name": "TradelessHall",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tradelesshall/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.siuolplex.tradelesshall.client.TradelesshallClient"
+    ],
+    "main": [
+      "io.siuolplex.tradelesshall.Tradelesshall"
+    ]
+  },
+  "mixins": [
+    "tradelesshall.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
